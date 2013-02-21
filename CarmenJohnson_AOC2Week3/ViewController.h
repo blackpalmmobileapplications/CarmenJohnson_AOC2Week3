@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SecondViewDelegate>
+{
+    IBOutlet UITextView *eventField; // TextView
+}
+
+-(IBAction)addEvent:(id)sender; // Add Event button
 
 @end
